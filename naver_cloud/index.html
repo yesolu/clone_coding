@@ -17,31 +17,84 @@
 
     <!-- reset.css -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/naver_cloud/css/defult.css">
+    <link rel="stylesheet" href="/naver_cloud/css/header.css">
+    <link rel="stylesheet" href="/naver_cloud/css/section.css">
+    <link rel="stylesheet" href="/naver_cloud/css/footer.css">
+
+    <script src="/naver_cloud/js/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
 </head>
 <body>
-    <header id="hd">
-        <h1 class="logo"><a href="#"></a></h1>
-        <div class="nav">
-            <ul class="gnb">
-                <li><a href="">홈</a></li>
-                <li><a href="">소개</a></li>
-                <li><a href="">클라우드</a></li>
-                <li><a href="">미디어</a></li>
-
-                <li class="out_link"><a href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용</a></li>
-                <li class="out_link"><a href="https://www.navercloudcorp.com/ncp/proposalGuide" target="_blank">제휴</a></li>
-                <li class="out_link"><a href="https://www.ncloud.com/?language=ko-KR" target="_blank">네이버 클라우드 플랫폼</a></li>
-            </ul>
-            <div class="lang">
-                <ul class="lnb">
-                    <li><a href="">한국어</a></li>
-                    <li><a href="">English</a></li>
-                    <li><a href="">日本語</a></li>
-                </ul>
+    <div id="wrap">
+        <header id="hd">
+            <div class="hdWrap">
+                <h1 class="logo"><a href="#"><img src="/naver_cloud/img/main_logo_w.svg" alt=""></a></h1>
+                <div class="nav">
+                    <ul class="gnb">
+                        <li class="active gnb_link"><a href="">홈</a></li>
+                        <li class="gnb_link"><a href="">소개</a></li>
+                        <li class="gnb_link"><a href="">클라우드</a></li>
+                        <li class="gnb_link"><a href="">미디어</a></li>
+                
+                        <li class="out_link"><a href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용<i>outlineicon</i></a></li>
+                        <li class="out_link"><a href="https://www.navercloudcorp.com/ncp/proposalGuide" target="_blank">제휴<i>outlineicon</i></a></li>
+                        <li class="out_link"><a href="https://www.ncloud.com/?language=ko-KR" target="_blank">네이버 클라우드 플랫폼<i>outlineicon</i></a></li>
+                    </ul>
+                    <div class="lang">
+                        <ul class="lnb">
+                            <li><a href="">한국어</a></li>
+                            <li><a href="">English</a></li>
+                            <li><a href="">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="mobile_toggle_btn ">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </span>
             </div>
-        </div>
-    </header>
-    <section></section>
+        </header>
+        <!-- header end -->
+        
+        <section id="sec1">
+            <div class="swiper-container" id="mainVisual">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide one">
+                    <video autoplay loop muted>
+                        <source src="/naver_cloud/img/video/home_main.mp4" type="video/mp4">
+                    </video>
+                    <div class="txtBox">
+                        <h3>모든 비즈니스를<br>가능하게 하는<br>
+                            네이버 클라우드</h3>
+                        <a class="mainBtn" href="https://www.ncloud.com/?language=ko-KR" target="_blank"></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide two">
+                    <div class="txtBox">
+                        <h3>개인용 스토리지 ‘네이버 클라우드’가 <br>
+                            ‘네이버 MYBOX’로 변경되었습니다</h3>
+                        <a class="main_link_btn sub" href="https://cloud.naver.com/about/introduce" target="_blank">네이버 MYBOX 바로가기</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide three">
+                    <div class="txtBox">
+                        <h3>클라우드를 ‘직접’ 만듭니다<br>클라우드를 ‘함께’ 만듭시다</h3>
+                        <a class="main_link_btn sub" href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용 바로가기</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </section>
+    </div>
 </body>
 </html>
