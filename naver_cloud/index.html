@@ -80,21 +80,53 @@
                     <div class="txtBox">
                         <h3>개인용 스토리지 ‘네이버 클라우드’가 <br>
                             ‘네이버 MYBOX’로 변경되었습니다</h3>
-                        <a class="main_link_btn sub" href="https://cloud.naver.com/about/introduce" target="_blank">네이버 MYBOX 바로가기</a>
+                        <a class="mainBtn sub" href="https://cloud.naver.com/about/introduce" target="_blank">네이버 MYBOX 바로가기</a>
                     </div>
                   </div>
                   <div class="swiper-slide three">
                     <div class="txtBox">
                         <h3>클라우드를 ‘직접’ 만듭니다<br>클라우드를 ‘함께’ 만듭시다</h3>
-                        <a class="main_link_btn sub" href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용 바로가기</a>
+                        <a class="mainBtn sub" href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용 바로가기</a>
                     </div>
                   </div>
                 </div>
         
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiperBtn">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
               </div>
         </section>
+        <section id="sec2">
+            <div class="sec2Box">
+                <p class="firstTxt">네이버 클라우드는</p>
+                <h3 class="sec2Txt">고객과 가장 가까운 곳에서<br>성장의 돌파구를 마련하는<br><i>대한민국 대표 클라우드 기업입니다</i>
+                </h3>
+                <a class="sec2Btn" href="#">소개 바로가기</a>
+            </div>
+        </section>
     </div>
+
+
+
+    <script>
+        var swiper = new Swiper("#mainVisual", {
+        //   spaceBetween: 30,
+        //   centeredSlides: true,
+          speed: 800,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>

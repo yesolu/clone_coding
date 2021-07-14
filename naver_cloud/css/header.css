@@ -48,6 +48,7 @@ position: absolute;}
 .out_link a i{width:24px;height: 24px; display: inline-block;text-indent: -99999px;}
 .out_link a:hover i{background: url(/naver_cloud/img/outlink_icon.png)no-repeat;background-size:contain ;}
 .lang{
+    position: relative;
     width: 24px;
     height: 24px;
     background: url(/naver_cloud/img/global_icon_w.png)no-repeat;
