@@ -28,14 +28,14 @@
 
     <script src="/naver_cloud/js/jquery-1.11.3.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/naver_cloud/js/style.js"></script>
+    <script src="/naver_cloud/js/style.js?ver=<?php echo time(); ?>"></script>
     
 </head>
 <body>
     <div id="wrap">
         <header id="hd">
             <div class="hdWrap">
-                <h1 class="logo"><a href="#"><img src="/naver_cloud/img/main_logo_w.svg" alt=""></a></h1>
+                <h1 class="logo"><a href="#"></a></h1>
                 <div class="nav">
                     <ul class="gnb">
                         <li class="on gnb_link"><a href="#">홈</a></li>
@@ -49,9 +49,9 @@
                     </ul>
                     <div class="lang">
                         <ul class="lnb">
-                            <li><a href="">한국어</a></li>
-                            <li><a href="">English</a></li>
-                            <li><a href="">日本語</a></li>
+                            <li class="lnb_link"><a href="#" class="on">한국어</a></li>
+                            <li class="lnb_link"><a href="#">English</a></li>
+                            <li class="lnb_link"><a href="#">日本語</a></li>
                         </ul>
                     </div>
                 </div>
@@ -116,31 +116,142 @@
                 <a class="secBtn" href="#">서비스 바로가기</a>
                 </div>
                 <div class="sec3Right">
-                    <ul class="imgBoxL"></ul>
-                    <ul class="imgBoxR"></ul>
+                    <ul class="imgBoxL">
+                        
+                        <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
+                        <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
+                        <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
+                        <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
+                        <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
+                        <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
+                        <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
+                        <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
+                        <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
+                        <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
+                        <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
+                        <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
+                        
+                    </ul>
+                    <ul class="imgBoxR">
+                        <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
+                        <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
+                        <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
+                        <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
+                        <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
+                        <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
+                        <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
+                        <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
+                        <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
+                        <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
+                        <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
+                        <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
+                        
+                    </ul>
                 </div>
             </div>
         </section>
         <section id="sec4">
+            <video autoplay loop muted class="sec4Video">
+                <source src="/naver_cloud/img/video/intro_ecosystem.mp4" type="video/mp4">
+            </video>
             <div class="sec4Wrap">
                 <div class="sec4Left">
                         <p class="firstTxt">IT 생태계</p>
                         <h3 class="secTxt">모두가 함께 성장할 수 있는<br>클라우드 기반의<br>선순환 생태계를 구축합니다
                         </h3>
-                        <a class="sec4Btn" href="#">IT생태계 바로가기</a>
+                        <a class="secBtn" href="#">IT생태계 바로가기</a>
                  </div>
-                 <div class="sec4Right"></div>
+                 <div class="sec4Right">
+                     <img src="/naver_cloud/img/main_tree_icon.png" alt="">
+                 </div>
             </div>
-            <video autoplay loop muted class="sec4Video">
-                <source src="/naver_cloud/img/video/intro_ecosystem.mp4" type="video/mp4">
-            </video>
+            
         </section>
         <section id="sec5">
             <div class="sec5Wrap">
                 <h3 class="secTxt">네이버 클라우드의<br><i>새로운 소식</i>을 만나보세요
                 </h3>
+                <ul class="news">
+                    <li><a href="#">
+                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_57.jpg" alt="새로운 소식"></div>
+                        <div class="text">
+                            <p>“보험업계 디지털 혁신 함께한다” 네이버클라우드와 삼성생명, 디지털 금융혁신 파트너로 뭉쳤다!"</p>
+                            <span class="date">2021.06.29</span>
+                        </div></a>
+                    </li>
+                    <li><a href="#">
+                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_56.jpg" alt="새로운 소식"></div>
+                        <div class="text">
+                            <p>네이버클라우드, 'NH 퍼블릭 클라우드 표준 사업자' 선정… “금융권 클라우드 강자 재확인”</p>
+                            <span class="date">2021.06.10</span>
+                        </div></a>
+                    </li>
+                    <li><a href="#">
+                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_55.jpg" alt="새로운 소식"></div>
+                        <div class="text">
+                            <p>네이버클라우드가 알려주는 ‘더 똑똑하게 일하는 법’, ‘오피스 구석 1열’ 토크쇼 개최</p>
+                            <span class="date">2021.06.03</span>
+                        </div></a>
+                    </li>
+                    <li><a href="#">
+                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_54.jpg" alt="새로운 소식"></div>
+                        <div class="text">
+                            <p>네이버클라우드-매직에코, 클라우드 기반의 ‘올인원 교육 서비스’ 함께 제공한다</p>
+                            <span class="date">2021.06.01</span>
+                        </div></a>
+                    </li>
+                </ul>
+                <a class="secBtn" href="#">새로운 소식 더보기</a>
             </div>
         </section>
+
+        <section id="sec6">
+            <div class="sec6Wrap">
+                <div class="sec6Left">
+                    <div class="leftTxt">
+                        <p>Partnership Proposal</p>
+                        <div>다양한 사업 및<br>서비스 제휴를 기다립니다</div>
+                    </div>
+                    <a href="#" class="rightBtn">함께 성장하기</a>
+                </div>
+                <div class="sec6Right">
+                    <div class="leftTxt">
+                        <p>Career</p>
+                        <div>클라우드를 '직접' 만듭시다<br>클라우드를 '함께' 만듭시다</div>
+                    </div>
+                    <a href="#" class="rightBtn">채용 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="ftWrap">
+                <div class="ftLeft">
+                    <h1>logo</h1>
+                    <div class="ftTxtWrap">
+                        <p>사업자등록번호 : 129-86-31394    통신판매업신고번호 : 제2009-경기성남-0510호</p>
+                        <p>대표이사 : 박원기    주소 : 경기도 성남시 분당구 분당내곡로 117 10층 및 11층 네이버클라우드, 13529</p>
+                        <p>ⓒ NAVER Cloud Corp. All Rights Reserved.</p>
+                        <div class="infoWrap">
+                                <ul class="infoLeft">
+                                    <li><a href="#">기업윤리 상담센터</a></li>
+                                    <li><a href="#">개인정보 처리방침</a></li>
+                                </ul>
+                                <ul class="infoRight">
+                                    <li><a href="#">네이버 블로그</a></li>
+                                    <li><a href="#">페이스북</a></li>
+                                    <li><a href="#">네이버TV</a></li>
+                                    <li><a href="#">유튜브</a></li>
+                                    <li><a href="#">미디엄</a></li>
+                                    <li><a href="#">링크드인</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ftRight">
+                    <button class="familySite">관계사 바로가기</button>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

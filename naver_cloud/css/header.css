@@ -16,8 +16,8 @@
     position: relative;
 }
 
-.logo{width: 182px;height: 20px;}
-.logo a{width: 100%;height: 100%; display: block;}
+.logo{width: 205px;height: 20px;}
+.logo a{width: 100%;height: 100%; display: block;background: url(/naver_cloud/img/main_logo_w.svg)no-repeat;}
 
 .nav{
     width: 100%;
@@ -57,6 +57,54 @@
     background: url(/naver_cloud/img/global_icon_w.png)no-repeat;
     background-size: cover;
     margin-left: 66px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 .lang:hover{background: url(/naver_cloud/img/global_icon_g.png)no-repeat;background-size: cover;}
-.lnb{display: none;}
+.lang.on{background: url(/naver_cloud/img/global_icon_g.png)no-repeat;background-size: cover;}
+
+.lnb{   
+    padding: 12px;
+    width: 112px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+   display: none;
+   
+  
+}
+.lnb.on{display: block;}
+
+
+.lnb li a{
+    display: block;
+    padding: 8px 16px;
+    float: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e1e1e;
+    background-color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    
+}
+
+.lnb li a:hover{
+    color: #1e1e1e;
+    background-color: #f3f3f3;
+} 
+.lnb li a.on{
+   
+    color: #fff !important;
+    background-color: #03c75a;
+}
+
+.scroll #hd{background-color: rgba(255, 255, 255);}
+.scroll .gnb_link>a{color:#aaa ;}
+.scroll .out_link>a{color: #aaa;}
+.scroll h1>a{background: url(/naver_cloud/img/main_logo.svg)no-repeat;}
+.scroll .lang{background: url(/naver_cloud/img/global_icon_b.png)no-repeat;background-size: contain;}
