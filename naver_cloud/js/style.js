@@ -29,8 +29,15 @@ $(document).ready(function(){
 
 })
 
-
+  });
   
+  
+  $(document).ready(function(){
+    $('.familySite>button').on('click',function(){
+      $('.familySiteList').slideToggle('slow')
+      $('.familySiteBtn').toggleClass('on')
+})
+
   });
 
   $(window).scroll(function(){

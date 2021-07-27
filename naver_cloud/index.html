@@ -21,18 +21,27 @@
     <link rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/naver_cloud/css/fullPage.css">
     <link rel="stylesheet" href="/naver_cloud/css/defult.css?ver=<?php echo time(); ?>">
     <link rel="stylesheet" href="/naver_cloud/css/header.css?ver=<?php echo time(); ?>">
     <link rel="stylesheet" href="/naver_cloud/css/section.css?ver=<?php echo time(); ?>">
     <link rel="stylesheet" href="/naver_cloud/css/footer.css?ver=<?php echo time(); ?>">
+    <!-- 리셋.폰트 제일 위에 -주로 쓰는게 맨 아래 -->
 
     <script src="/naver_cloud/js/jquery-1.11.3.min.js"></script>
+    <script src="/naver_cloud/js/animation.gsap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/naver_cloud/js/fullpage.extensions.min.js"></script>
+    <script src="/naver_cloud/js/fullpage.offsetSections.min.js"></script>
+    <script src="/naver_cloud/js/ScrollMagic.js"></script>
+    <script src="/naver_cloud/js/scrolloverflow.js"></script>
+    <script src="/naver_cloud/js/TweenMax.min.js"></script>
+
     <script src="/naver_cloud/js/style.js?ver=<?php echo time(); ?>"></script>
     
 </head>
 <body>
-    <div id="wrap">
+    <div >
         <header id="hd">
             <div class="hdWrap">
                 <h1 class="logo"><a href="#"></a></h1>
@@ -64,194 +73,214 @@
         </header>
         <!-- header end -->
         
-        <section id="sec1">
-            <div class="swiper-container" id="mainVisual">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide one">
-                    <video autoplay loop muted>
-                        <source src="/naver_cloud/img/video/home_main.mp4" type="video/mp4">
-                    </video>
-                    <div class="txtBox">
-                        <h3>모든 비즈니스를<br>가능하게 하는<br>
-                            네이버 클라우드</h3>
-                        <a class="mainBtn" href="https://www.ncloud.com/?language=ko-KR" target="_blank"></a>
+       <div id="fullpage">
+            <section id="sec1" class="section" >
+                <div class="swiper-container" id="mainVisual">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide one" style="width: 100%;">
+                        <video autoplay loop muted>
+                            <source src="/naver_cloud/img/video/home_main.mp4" type="video/mp4">
+                        </video>
+                        <div class="txtBox">
+                            <h3>모든 비즈니스를<br>가능하게 하는<br>
+                                네이버 클라우드</h3>
+                            <a class="mainBtn" href="https://www.ncloud.com/?language=ko-KR" target="_blank"></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide two" style="width: 1920px;">
+                        <div class="txtBox">
+                            <h3>개인용 스토리지 ‘네이버 클라우드’가 <br>
+                                ‘네이버 MYBOX’로 변경되었습니다</h3>
+                            <a class="mainBtn sub" href="https://cloud.naver.com/about/introduce" target="_blank">네이버 MYBOX 바로가기</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide three" style="width: 1920px;">
+                        <div class="txtBox">
+                            <h3>클라우드를 ‘직접’ 만듭니다<br>클라우드를 ‘함께’ 만듭시다</h3>
+                            <a class="mainBtn sub" href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용 바로가기</a>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide two">
-                    <div class="txtBox">
-                        <h3>개인용 스토리지 ‘네이버 클라우드’가 <br>
-                            ‘네이버 MYBOX’로 변경되었습니다</h3>
-                        <a class="mainBtn sub" href="https://cloud.naver.com/about/introduce" target="_blank">네이버 MYBOX 바로가기</a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide three">
-                    <div class="txtBox">
-                        <h3>클라우드를 ‘직접’ 만듭니다<br>클라우드를 ‘함께’ 만듭시다</h3>
-                        <a class="mainBtn sub" href="https://recruit.navercloudcorp.com/navercloud/recruitMain" target="_blank">채용 바로가기</a>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="swiperBtn">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-              </div>
-        </section>
-        <section id="sec2">
-            <div class="sec2Box">
-                <p class="firstTxt">네이버 클라우드는</p>
-                <h3 class="secTxt">고객과 가장 가까운 곳에서<br>성장의 돌파구를 마련하는<br><i>대한민국 대표 클라우드 기업입니다</i>
-                </h3>
-                <a class="secBtn" href="#">소개 바로가기</a>
-            </div>
-        </section>
-
-        <section id="sec3">
-            <div class="sec3Wrap">
-                <div class="sec3Left">
-                <p class="firstTxt">네이버 클라우드는</p>
-                <h3 class="secTxt">다양한 산업과<br>규모에 맞춘<br>솔루션 서비스<i>로<br>고객의 비즈니스를<br>성공으로 이끕니다</i>
-                </h3>
-                <a class="secBtn" href="#">서비스 바로가기</a>
-                </div>
-                <div class="sec3Right">
-                    <ul class="imgBoxL">
-                        
-                        <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
-                        <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
-                        <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
-                        <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
-                        <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
-                        <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
-                        <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
-                        <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
-                        <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
-                        <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
-                        <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
-                        <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
-                        
-                    </ul>
-                    <ul class="imgBoxR">
-                        <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
-                        <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
-                        <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
-                        <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
-                        <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
-                        <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
-                        <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
-                        <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
-                        <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
-                        <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
-                        <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
-                        <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="sec4">
-            <video autoplay loop muted class="sec4Video">
-                <source src="/naver_cloud/img/video/intro_ecosystem.mp4" type="video/mp4">
-            </video>
-            <div class="sec4Wrap">
-                <div class="sec4Left">
-                        <p class="firstTxt">IT 생태계</p>
-                        <h3 class="secTxt">모두가 함께 성장할 수 있는<br>클라우드 기반의<br>선순환 생태계를 구축합니다
-                        </h3>
-                        <a class="secBtn" href="#">IT생태계 바로가기</a>
-                 </div>
-                 <div class="sec4Right">
-                     <img src="/naver_cloud/img/main_tree_icon.png" alt="">
-                 </div>
-            </div>
             
-        </section>
-        <section id="sec5">
-            <div class="sec5Wrap">
-                <h3 class="secTxt">네이버 클라우드의<br><i>새로운 소식</i>을 만나보세요
-                </h3>
-                <ul class="news">
-                    <li><a href="#">
-                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_57.jpg" alt="새로운 소식"></div>
-                        <div class="text">
-                            <p>“보험업계 디지털 혁신 함께한다” 네이버클라우드와 삼성생명, 디지털 금융혁신 파트너로 뭉쳤다!"</p>
-                            <span class="date">2021.06.29</span>
-                        </div></a>
-                    </li>
-                    <li><a href="#">
-                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_56.jpg" alt="새로운 소식"></div>
-                        <div class="text">
-                            <p>네이버클라우드, 'NH 퍼블릭 클라우드 표준 사업자' 선정… “금융권 클라우드 강자 재확인”</p>
-                            <span class="date">2021.06.10</span>
-                        </div></a>
-                    </li>
-                    <li><a href="#">
-                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_55.jpg" alt="새로운 소식"></div>
-                        <div class="text">
-                            <p>네이버클라우드가 알려주는 ‘더 똑똑하게 일하는 법’, ‘오피스 구석 1열’ 토크쇼 개최</p>
-                            <span class="date">2021.06.03</span>
-                        </div></a>
-                    </li>
-                    <li><a href="#">
-                        <div class="newsImg"><img src="/naver_cloud/img/press_thumb_54.jpg" alt="새로운 소식"></div>
-                        <div class="text">
-                            <p>네이버클라우드-매직에코, 클라우드 기반의 ‘올인원 교육 서비스’ 함께 제공한다</p>
-                            <span class="date">2021.06.01</span>
-                        </div></a>
-                    </li>
-                </ul>
-                <a class="secBtn" href="#">새로운 소식 더보기</a>
-            </div>
-        </section>
-
-        <section id="sec6">
-            <div class="sec6Wrap">
-                <div class="sec6Left">
-                    <div class="leftTxt">
-                        <p>Partnership Proposal</p>
-                        <div>다양한 사업 및<br>서비스 제휴를 기다립니다</div>
+                    <div class="swiperBtn">
+                        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <a href="#" class="rightBtn">함께 성장하기</a>
+                  </div>
+            </section>
+            <section id="sec2" class="section fp-auto-height" >
+                <div class="sec2Box">
+                    <p class="firstTxt">네이버 클라우드는</p>
+                    <h3 class="secTxt">고객과 가장 가까운 곳에서<br>성장의 돌파구를 마련하는<br><i>대한민국 대표 클라우드 기업입니다</i>
+                    </h3>
+                    <a class="secBtn" href="#">소개 바로가기</a>
                 </div>
-                <div class="sec6Right">
-                    <div class="leftTxt">
-                        <p>Career</p>
-                        <div>클라우드를 '직접' 만듭시다<br>클라우드를 '함께' 만듭시다</div>
+            </section>
+           
+            <section id="sec3" class="section fp-auto-height">
+                <div class="sec3Wrap">
+                    <div class="sec3Left">
+                    <p class="firstTxt">네이버 클라우드는</p>
+                    <h3 class="secTxt">다양한 산업과<br>규모에 맞춘<br>솔루션 서비스<i>로<br>고객의 비즈니스를<br>성공으로 이끕니다</i>
+                    </h3>
+                    <a class="secBtn" href="#">서비스 바로가기</a>
                     </div>
-                    <a href="#" class="rightBtn">채용 바로가기</a>
+                    <div class="sec3Right">
+                        <ul class="imgBoxL">
+                            
+                            <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
+                            <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
+                            <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
+                            <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
+                            <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
+                            <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
+                            <li><img src="/naver_cloud/img/loop_02.jpg" alt=""><span>AI</span></li>
+                            <li><img src="/naver_cloud/img/loop_04.jpg" alt=""><span>Education</span></li>
+                            <li><img src="/naver_cloud/img/loop_06.jpg" alt=""><span>Finance</span></li>
+                            <li><img src="/naver_cloud/img/loop_08.jpg" alt=""><span>Media</span></li>
+                            <li><img src="/naver_cloud/img/loop_10.jpg" alt=""><span>Work</span></li>
+                            <li><img src="/naver_cloud/img/loop_12.jpg" alt=""><span>Hybrid Cloud</span></li>
+                            
+                        </ul>
+                        <ul class="imgBoxR">
+                            <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
+                            <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
+                            <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
+                            <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
+                            <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
+                            <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
+                            <li><img src="/naver_cloud/img/loop_01.jpg" alt=""><span>E-Commerce</span></li>
+                            <li><img src="/naver_cloud/img/loop_03.jpg" alt=""><span>Healthcare</span></li>
+                            <li><img src="/naver_cloud/img/loop_05.jpg" alt=""><span>Public Sector</span></li>
+                            <li><img src="/naver_cloud/img/loop_07.jpg" alt=""><span>Game</span></li>
+                            <li><img src="/naver_cloud/img/loop_09.jpg" alt=""><span>Manufacturing</span></li>
+                            <li><img src="/naver_cloud/img/loop_11.jpg" alt=""><span>Big Data</span></li>
+                            
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <footer id="footer">
-            <div class="ftWrap">
-                <div class="ftLeft">
-                    <h1>logo</h1>
-                    <div class="ftTxtWrap">
-                        <p>사업자등록번호 : 129-86-31394    통신판매업신고번호 : 제2009-경기성남-0510호</p>
-                        <p>대표이사 : 박원기    주소 : 경기도 성남시 분당구 분당내곡로 117 10층 및 11층 네이버클라우드, 13529</p>
-                        <p>ⓒ NAVER Cloud Corp. All Rights Reserved.</p>
-                        <div class="infoWrap">
-                                <ul class="infoLeft">
-                                    <li><a href="#">기업윤리 상담센터</a></li>
-                                    <li><a href="#">개인정보 처리방침</a></li>
-                                </ul>
-                                <ul class="infoRight">
-                                    <li><a href="#">네이버 블로그</a></li>
-                                    <li><a href="#">페이스북</a></li>
-                                    <li><a href="#">네이버TV</a></li>
-                                    <li><a href="#">유튜브</a></li>
-                                    <li><a href="#">미디엄</a></li>
-                                    <li><a href="#">링크드인</a></li>
-                                </ul>
+            </section>
+            <section id="sec4" class="section  fp-auto-height ">
+                <video autoplay loop muted class="sec4Video">
+                    <source src="/naver_cloud/img/video/intro_ecosystem.mp4" type="video/mp4">
+                </video>
+                <div class="sec4Wrap">
+                    <div class="sec4Left">
+                            <p class="firstTxt">IT 생태계</p>
+                            <h3 class="secTxt">모두가 함께 성장할 수 있는<br>클라우드 기반의<br>선순환 생태계를 구축합니다
+                            </h3>
+                            <a class="secBtn" href="#">IT생태계 바로가기</a>
+                     </div>
+                     <div class="sec4Right">
+                         <img src="/naver_cloud/img/main_tree_icon.png" alt="">
+                     </div>
+                </div>
+                
+            </section>
+            <section id="sec5" class="section">
+                <div class="sec5Wrap">
+                    <h3 class="secTxt">네이버 클라우드의<br><i>새로운 소식</i>을 만나보세요
+                    </h3>
+                    <ul class="news">
+                        <li><a href="#">
+                            <div class="newsImg">
+                                <div class="dim"></div>
+                                <img src="/naver_cloud/img/press_thumb_57.jpg" alt="새로운 소식"></div>
+                            <div class="text">
+                                <p>“보험업계 디지털 혁신 함께한다” 네이버클라우드와 삼성생명, 디지털 금융혁신 파트너로 뭉쳤다!"</p>
+                                <span class="date">2021.06.29</span>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="newsImg">
+                                <div class="dim"></div>
+                                <img src="/naver_cloud/img/press_thumb_56.jpg" alt="새로운 소식"></div>
+                            <div class="text">
+                                <p>네이버클라우드, 'NH 퍼블릭 클라우드 표준 사업자' 선정… “금융권 클라우드 강자 재확인”</p>
+                                <span class="date">2021.06.10</span>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="newsImg">
+                                <div class="dim"></div>
+                                <img src="/naver_cloud/img/press_thumb_55.jpg" alt="새로운 소식"></div>
+                            <div class="text">
+                                <p>네이버클라우드가 알려주는 ‘더 똑똑하게 일하는 법’, ‘오피스 구석 1열’ 토크쇼 개최</p>
+                                <span class="date">2021.06.03</span>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="newsImg">
+                                <div class="dim"></div>
+                                <img src="/naver_cloud/img/press_thumb_54.jpg" alt="새로운 소식"></div>
+                            <div class="text">
+                                <p>네이버클라우드-매직에코, 클라우드 기반의 ‘올인원 교육 서비스’ 함께 제공한다</p>
+                                <span class="date">2021.06.01</span>
+                            </div></a>
+                        </li>
+                    </ul>
+                    <a class="secBtn" href="#">새로운 소식 더보기</a>
+                </div>
+                <div class="sec6Wrap">
+                    <div class="sec6Left">
+                        <div class="leftTxt">
+                            <p>Partnership Proposal</p>
+                            <div>다양한 사업 및<br>서비스 제휴를 기다립니다</div>
+                        </div>
+                        <a href="#" class="secBtn">함께 성장하기</a>
+                    </div>
+                    <div class="sec6Right">
+                        <div class="leftTxt">
+                            <p>Career</p>
+                            <div>클라우드를 '직접' 만듭시다<br>클라우드를 '함께' 만듭시다</div>
+                        </div>
+                        <a href="#" class="secBtn">채용 바로가기</a>
+                    </div>
+                </div>
+               
+            </section>
+            <footer id="footer" class="section fp-auto-height">
+                <div class="ftWrap">
+                    <div class="ftLeft">
+                        <h1><img src="/naver_cloud/img/footer_logo.png" alt=""></h1>
+                        <div class="ftTxtWrap">
+                            <p>사업자등록번호 : 129-86-31394    통신판매업신고번호 : 제2009-경기성남-0510호</p>
+                            <p>대표이사 : 박원기    주소 : 경기도 성남시 분당구 분당내곡로 117 10층 및 11층 네이버클라우드, 13529</p>
+                            <p>ⓒ NAVER Cloud Corp. All Rights Reserved.</p>
+                            <div class="infoWrap">
+                                    <ul class="infoLeft">
+                                        <li><a href="#">기업윤리 상담센터</a></li>
+                                        <li><a href="#">개인정보 처리방침</a></li>
+                                    </ul>
+                                    <ul class="infoRight">
+                                        <li><a href="#">네이버 블로그</a></li>
+                                        <li><a href="#">페이스북</a></li>
+                                        <li><a href="#">네이버TV</a></li>
+                                        <li><a href="#">유튜브</a></li>
+                                        <li><a href="#">미디엄</a></li>
+                                        <li><a href="#">링크드인</a></li>
+                                    </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="ftRight">
+                       <div class="familySite">
+                            <button class="familySiteBtn">관계사 바로가기</button>
+                            <ul class="familySiteList">
+                                <li><a href="https://www.navercorp.com" target="_blank">네이버</a></li>
+                                <li><a href="https://www.naverlabs.com" target="_blank">네이버랩스</a></li>
+                                <li><a href="https://naver.worksmobile.com" target="_blank">웍스모바일</a></li>
+                                <li><a href="https://linepluscorp.com/" target="_blank">라인</a></li>
+                                <li><a href="https://clova.ai/ko/" target="_blank">네이버 클로바</a></li>
+                            </ul>
+                       </div>
+                    </div>
                 </div>
-                <div class="ftRight">
-                    <button class="familySite">관계사 바로가기</button>
-                </div>
-            </div>
-        </footer>
+            </footer>
+       </div>
+
+       
     </div>
 
 
@@ -260,7 +289,7 @@
         var swiper = new Swiper("#mainVisual", {
         //   spaceBetween: 30,
         //   centeredSlides: true,
-          speed: 800,
+          speed: 1200,
           autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -268,12 +297,61 @@
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            type:'fracticon'
           },
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+          lazyLoading: true,
+        lazyLoadingInPrevNext: true,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true
         });
+        
+        new fullpage('#fullpage', {
+    anchors: ['page0', 'page1', 'page2', 'page3', 'page4', 'page5'],
+    licenseKey: '9680D241-C8F542C1-A83107A4-8E33A65C',
+    autoScrolling: true,
+    scrollingSpeed: 800,
+    v2compatible: true,
+        onLeave: function(index, nextIndex, direction){
+            //내려갈때
+            if(direction == 'down'){
+                //내려갈때
+                if(index - nextIndex <= -1){
+                    $('#top_btn').fadeIn();
+                    $('#hd').addClass('scroll');
+                }
+            }
+            //올라갈때
+            if(direction == 'up'){
+                //한칸씩 올라갈때
+                if(index - nextIndex == 1){
+                    if(index == 2 && nextIndex == 1 && direction == 'up'){
+                        $('#top_btn').fadeOut();
+                        $('#hd').removeClass('scroll');
+                        }
+                }
+                //여러칸 올라갈때
+                if(index - nextIndex > 1){
+                    $('#top_btn').fadeOut();
+                    $('#hd').removeClass('scroll');
+                }
+            }
+        },
+});
+
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+							triggerElement: "#sec4",
+                            triggerHook: 0.5,
+                            
+						})
+						.setClassToggle("#sec4", "active")
+                        .addTo(controller)
+
+                        
       </script>
 </body>
 </html>
